@@ -1,0 +1,16 @@
+title: guia de estudio
+description: Archivos con un sistema de evaluacion de una guia de estudio
+template:
+  repo: guia-de-estudio-template
+  name: guia-de-estudio
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
